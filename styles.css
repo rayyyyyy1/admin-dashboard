@@ -23,6 +23,8 @@ body{
 }
 .top{
     display: flex;
+    margin-top: 5px;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -44,17 +46,29 @@ body{
     flex-direction: column;
     gap: 2rem;
 }
-.projects div{
-    display: grid;
-    margin-left: 5px;
-}
 .real_content{
     background-color: aqua;
     display: flex;
-    justify-content: space-between;
+    height: 100%;
 }
 .announcements_trending{
     display: flex;
     margin-right: 5px;
     flex-direction: column;
+}
+.projects{
+    background-color: rgb(116, 15, 15);
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}  
+.prj{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-left: 2rem;
+}
+.projects h1{
+    margin-left: 8px;
 }
